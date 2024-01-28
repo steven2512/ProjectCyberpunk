@@ -1,29 +1,55 @@
 body {
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    background-color:#091833;
-    font-weight: 700;
     background-image: url('https://wallpaperaccess.com/full/676037.jpg');
     background-size: cover;
 }
 
-button {
-
-    background: none;
-    color: #ea00d9;
-    border: 2px solid #0abdc6;
-    border-radius: 0.5em;
-    font-family: 'Orbitron', sans-serif;
-    padding: 0.5em 2em;
-    transition: 0.2s;
-    box-shadow: 0 0.5em -0.5 #0abdc6;
+ul {
+    list-style: none;
 }
 
-button:hover {
+ul a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between
+}
+
+.general {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    max-width: 30%;
+    
+}
+
+.credentials {
+    display:flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    max-width: 15%;
+
+}
+
+#home, #discover, #product, #contact, #signin, #signup {
     border: 2px solid #0abdc6;
+    box-shadow: 0 0 3px #9ecaed;
+    border-radius: 0.5em;
+    padding: 0.4em;
+    transition: 0.25s;
+}
+
+#home:hover, #discover:hover, #product:hover, #contact:hover, #signin:hover, #signup:hover {
+    box-shadow: 0 0 7px #9ecaed, 0.2em 0.5em 2em -0.4em #ea00d9;
+    border: 2px solid #0abdc6;
+}
+
+
+
+
+#home a, #discover a, #product a, #contact a, #signin a, #signup a {
     color: #ea00d9;
-    box-shadow: 0 1em 0.8em -0.8em #ea00d9, 0 0 0.5em #0abdc6;
-    font-weight: 700;
-    cursor: pointer;
+    font-family: 'Oxanium', sans-serif;
+    font-weight: 400
 }
