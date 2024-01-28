@@ -1,5 +1,29 @@
 body {
-    display: flex;
-    align-items: center;
+    display:flex;
+    align-items:center;
     justify-content: center;
+    background-color:#091833;
+    font-weight: 700;
+    background-image: url('https://wallpaperaccess.com/full/676037.jpg');
+    background-size: cover;
+}
+
+button {
+
+    background: none;
+    color: #ea00d9;
+    border: 2px solid #0abdc6;
+    border-radius: 0.5em;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0.5em 2em;
+    transition: 0.2s;
+    box-shadow: 0 0.5em -0.5 #0abdc6;
+}
+
+button:hover {
+    border: 2px solid #0abdc6;
+    color: #ea00d9;
+    box-shadow: 0 1em 0.8em -0.8em #ea00d9, 0 0 0.5em #0abdc6;
+    font-weight: 700;
+    cursor: pointer;
 }
