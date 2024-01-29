@@ -41,11 +41,9 @@ nav {
 }
 
 #home:hover, #discover:hover, #product:hover, #contact:hover, #signin:hover, #signup:hover {
-    box-shadow: 0 0 7px #9ecaed, 0.2em 0.5em 2em -0.4em #ea00d9;
+    box-shadow: 0 0 7px #9ecaed, 0.2em 0.8em 1em -0.5em #ea00d9;
     border: 2px solid #0abdc6;
 }
-
-
 
 
 #home a, #discover a, #product a, #contact a, #signin a, #signup a {
