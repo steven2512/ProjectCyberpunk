@@ -11,25 +11,18 @@ ul a {
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between
-}
-
 .general {
     display: flex;
     justify-content: space-evenly;
-    flex-grow: 1;
-    max-width: 30%;
-    
+    max-width: 33.3%;
+    margin-left: 33.3%;
+    margin-right: 33.3%;
 }
 
 .credentials {
-    display:flex;
-    flex-grow: 1;
+    display: flex;
     justify-content: space-evenly;
-    max-width: 15%;
-
+    margin-left: 82.5%;
 }
 
 #home, #discover, #product, #contact, #signin, #signup {
