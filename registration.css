@@ -1,3 +1,26 @@
-i {
-    transition: 0.2s;
+body {
+    margin: 10px;
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/108/140/869/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-d8b62d28c0f06c48d03c114ec8f2b4aa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label {
+    color: white;
+}
+
+h1 {
+    padding: 10px;
+    width: fit-content;
+    transition: 0.5s ease-in;
+    color: #0abdc6;
+    border: 2px solid #0abdc6;
+    border-radius: 0.2em;
+}
+
+h1:hover {
+    color: #8900ff;
+    border: 2px solid #0abdc6;
+    border-radius: 0.2em;
+
 }
