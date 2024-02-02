@@ -24,3 +24,14 @@ h1:hover {
     border-radius: 0.2em;
 
 }
+
+button {
+    background-color: #0abdc6;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+button:hover {
+    background: #640ad3;
+}
