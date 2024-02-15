@@ -64,5 +64,6 @@ ul a {
 }
 
 .others {
+    display: flex;
     max-width: fit-content;
 }
