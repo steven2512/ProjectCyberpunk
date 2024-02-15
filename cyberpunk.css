@@ -25,7 +25,13 @@ ul a {
     margin-left: 82.5%;
 }
 
-#home, #discover, #product, #contact, #signin, #signup {
+#home,
+#discover,
+#product,
+#contact,
+#signin,
+#signup,
+#switch {
     border: 2px solid #0abdc6;
     box-shadow: 0 0 3px #9ecaed;
     border-radius: 0.5em;
@@ -33,14 +39,30 @@ ul a {
     transition: 0.25s;
 }
 
-#home:hover, #discover:hover, #product:hover, #contact:hover, #signin:hover, #signup:hover {
+#home:hover,
+#discover:hover,
+#product:hover,
+#contact:hover,
+#signin:hover,
+#signup:hover,
+#switch:hover {
     box-shadow: 0 0 7px #9ecaed, 0.2em 0.8em 1em -0.5em #ea00d9;
     border: 2px solid #0abdc6;
 }
 
 
-#home a, #discover a, #product a, #contact a, #signin a, #signup a {
+#home a,
+#discover a,
+#product a,
+#contact a,
+#signin a,
+#signup a,
+#switch a {
     color: #ea00d9;
     font-family: 'Oxanium', sans-serif;
     font-weight: 400
+}
+
+.others {
+    max-width: fit-content;
 }
