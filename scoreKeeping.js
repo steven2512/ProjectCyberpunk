@@ -6,8 +6,11 @@ const reset = document.querySelector('#reset')
 const maxScore = document.querySelector('#maxScore')
 p1Add.addEventListener('click', function () {
     let newValue = parseInt(p1.innerText) + 1
-
     p1.innerText = newValue
+    if (parseInt(p1.innerText) === parseInt(maxScore.value)) {
+        p1.style.color = 'green';
+        p2.style.color = 'red';
+    }
 
 })
 p2Add.addEventListener('click', function () {
@@ -15,6 +18,4 @@ p2Add.addEventListener('click', function () {
     p2.innerText = newValue2
 })
 
-//maxScore.addEventListener('input', function (e) {
-    
-//})
+
