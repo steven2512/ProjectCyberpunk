@@ -30,12 +30,18 @@ p2Add.addEventListener('click', function () {
     }
 })
 
-reset.addEventListener('click', function () {
+function resetScore() {
+    gameIsOver = false;
     p1.innerText = 0;
     p1.style.color = "";
     p2.innerText = 0;
     p2.style.color = "";
+}
+reset.addEventListener('click', resetScore)
+maxScore.addEventListener('change', resetScore)
 
-})
+
+
+
 
 
