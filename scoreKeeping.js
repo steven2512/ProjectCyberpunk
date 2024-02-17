@@ -30,4 +30,12 @@ p2Add.addEventListener('click', function () {
     }
 })
 
+reset.addEventListener('click', function () {
+    p1.innerText = 0;
+    p1.style.color = "";
+    p2.innerText = 0;
+    p2.style.color = "";
+
+})
+
 
