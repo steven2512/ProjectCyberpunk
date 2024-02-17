@@ -1,0 +1,5 @@
+const p1 = document.querySelector('#p1Score')
+const p2 = document.querySelector('#p2Score')
+const p1Add = document.querySelector('#p1Add')
+const p2Add = document.querySelector('#p2Add')
+const reset = document.querySelector('#reset')
