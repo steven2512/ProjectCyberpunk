@@ -1,44 +1,54 @@
-const p1 = document.querySelector('#p1Score')
-const p2 = document.querySelector('#p2Score')
-const p1Add = document.querySelector('#p1Add')
-const p2Add = document.querySelector('#p2Add')
 const reset = document.querySelector('#reset')
 const maxScore = document.querySelector('#maxScore')
 let gameIsOver = false
-p1Add.addEventListener('click', function () {
+
+
+const p1All = {
+    score: document.querySelector('#p1Score'),
+    add: document.querySelector('#p1Add'),
+
+}
+
+const p2All = {
+    score: document.querySelector('#p2Score'),
+    add: document.querySelector('#p2Add')
+
+}
+
+function updateScore(player, opponent) {
     if (!gameIsOver) {
-        let newValue = parseInt(p1.innerText) + 1
-        p1.innerText = newValue
-        if (parseInt(p1.innerText) === parseInt(maxScore.value)) {
-            p1.style.color = 'green';
-            p2.style.color = 'red';
+        let newValue = parseInt(player.score.innerText) + 1
+        player.score.innerText = newValue
+        if (parseInt(player.score.innerText) === parseInt(maxScore.value)) {
+            player.score.style.color = 'green';
+            opponent.score.style.color = 'red';
             gameIsOver = true
         }
     }
 
+}
+
+p1All.add.addEventListener('click', function () {
+    updateScore(p1All, p2All)
 })
-p2Add.addEventListener('click', function () {
-    if (!gameIsOver) {
-        let newValue2 = parseInt(p2.innerText) + 1
-        p2.innerText = newValue2
-        if (parseInt(p2.innerText) === parseInt(maxScore.value)) {
-            p2.style.color = 'green';
-            p1.style.color = 'red';
-            gameIsOver = true
-
-        }
-    }
+p2All.add.addEventListener('click', function () {
+    updateScore(p2All, p1All)
 })
 
 function resetScore() {
     gameIsOver = false;
-    p1.innerText = 0;
-    p1.style.color = "";
-    p2.innerText = 0;
-    p2.style.color = "";
+    p1All.score.innerText = 0;
+    p1All.score.style.color = "";
+    p2All.score.innerText = 0;
+    p2All.score.style.color = "";
 }
 reset.addEventListener('click', resetScore)
 maxScore.addEventListener('change', resetScore)
+
+
+
+
+
 
 
 
